@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove "Focus On" Section
 // @namespace    http://tampermonkey.net/
-// @version      0.0.1
+// @version      0.0.2
 // @description  Removes the element that features celebrities from the Criticker homepage.
 // @author       Alsweider
 // @match        https://www.criticker.com/
@@ -15,8 +15,8 @@
 (function() {
     'use strict';
 
-    //Search & remove element with the ID "rc_focus"
-    var focusSection = document.getElementById('rc_focus');
+    //Search & remove element with the ID "sb_focus"
+    var focusSection = document.getElementById('sb_focus');
     if (focusSection) {
         focusSection.remove();
     }
